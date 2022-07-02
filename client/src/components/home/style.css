@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: #353535 !important;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  text-align: center;
+  margin: auto;
+}
+.header h1 {
+  font: 40px;
+  color: white;
+}
+.filtered_div {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 30%;
+  padding: 10px;
+  color: white;
+  margin: 10px 100px;
+}
+.not_filtered_div {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 26%;
+  padding: 10px 10px 5px;
+  margin: 20px 100px;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .not_filtered_div {
+    width: 100%;
+  }
+}
+
+.click_here_span {
+  font-weight: 700;
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.click_here_span:hover {
+  border-bottom: 1px solid black;
+}
+.not_filtered_divs {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 100px;
+  width: 50%;
+  color: white;
+}
+.not_filtered_divs h6 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px 10px 5px;
+  width: 52%;
+}
+.page_button {
+  margin: 10px 0px 64px;
+}
+.seen_all_header {
+  color: white;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.chatbot {
+  position: fixed;
+  right: 0px; bottom: 0px; 
+  margin:5px;
+  z-index :9;
+}
+.not_verified {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  text-align: center;
+  background: black;
+  color: white;
+}

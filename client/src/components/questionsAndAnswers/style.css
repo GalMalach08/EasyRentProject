@@ -1,0 +1,9 @@
+.qa_header {
+  margin-bottom: 40px;
+}
+.MuiAccordion-root.Mui-expanded {
+  margin: 0px !important; 
+}
+.typography {
+  background-color: #353535;
+}

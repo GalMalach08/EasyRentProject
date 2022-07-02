@@ -1,0 +1,86 @@
+.navbar {
+  width: 100%;
+  margin: 0px auto;
+}
+.bg-light {
+  background-color: black !;
+}
+.navbar-collapse {
+  justify-content: center;
+  width: 100%;
+}
+.header_section {
+  background-color: #212529;
+  height: 100%;
+  padding: 70px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.95;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+.admin_panel_header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_link {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 10px 10px;
+}
+
+.nav_link:hover {
+  text-decoration: none;
+  color: #707070 !important;
+  /* transform: scale(1.1); */
+}
+.nav_brand {
+  color: white !important;
+}
+.nav_brand:hover {
+  color: #707070 !important;
+}
+.navbar-toggler {
+  color: white !important;
+}
+
+.selected {
+  font-weight: 700;
+  font-size: 22px;
+}
+.selected:hover {
+  color: black;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.preview__header {
+  font-size: 12px;
+  height: 54px;
+  background-color: #353535;
+  z-index: 100;
+  line-height: 54px;
+  margin-bottom: 1px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+.preview__envato-logo {
+  float: left;
+  padding: 0 20px;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.navbars {
+  color: white;
+}
+
+.auto_typing_div {
+  margin-top: 30px;
+}

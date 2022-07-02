@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "ShoppingProject",
+			"path": "..\\..\\..\\ShoppingProject"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Instagram-master"
+		},
+		{
+			"path": "..\\..\\..\\john-bryce-node\\Twitter"
+		},
+		{
+			"path": "..\\..\\..\\react\\ReactCourse\\Projects\\NBA"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MyTaskBoard"
+	}
+}

@@ -1,0 +1,39 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+/* .image_div {
+  position: relative;
+  padding: 50px 0px;
+  max-width: 550px;
+  margin: auto;
+} */
+.delete_icon {
+  position: absolute;
+  right: 4px;
+  top: 25px;
+  cursor: pointer;
+}
+.image-gallery-image {
+  width: 421px !important;
+  height: 300px;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+.ab {
+  position: relative;
+}
+
+.middle {
+  transition: 0.5s ease;
+  z-index: 1;
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.time_label {
+  margin: 15px 10px 20px 0px;
+  display: block;
+}

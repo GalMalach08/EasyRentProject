@@ -1,0 +1,9 @@
+body {
+  background-color: #fafafa;
+}
+.error {
+  color: red;
+}
+.signup_header {
+  margin-bottom: 20px;
+}

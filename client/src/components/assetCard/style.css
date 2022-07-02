@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+div.contain {
+  max-width: 550px;
+  padding-bottom: 5px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  margin: 55px auto 10px;
+  border: 0px 1px solid lightgrey;
+  border-radius:10px;
+  color: white;
+  background-color: #6d6d6d;
+}
+a {
+  text-decoration: none !important;
+}
+div.contain:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+@media screen and (max-width: 1279px) {
+  div.contain {
+    margin: 15px auto 20px;
+  }
+}
+.pair_items {
+  display: flex;
+  justify-content: space-around;
+}
+div.contain h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.chip {
+  margin-right: 12px;
+}
+
+.asset_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-top: -5px;
+}
+
+.asset_price h3 {
+  font-weight: bold;
+  margin: 0px 5px 5px;
+}
+.asset_price p {
+  margin: 0px 10px;
+}
+
+.asset_address {
+  text-align: right;
+  margin: 10px 5px;
+}
+
+.asset_enter {
+  text-align: right;
+  margin: 5px 5px;
+}
+
+.asset_updatedOn {
+  text-align: right;
+  margin: 5px 5px;
+}
+
+.asset_labels {
+  text-align: right;
+  margin: 20px 5px;
+}
+
+.share_icon {
+  margin-top: 18px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.share_icon2 {
+  margin-top: 18px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.share_icons_div {
+  display: flex;
+  justify-content: space-between;
+}
+.asset_icons {
+  margin-top: 12px;
+}
