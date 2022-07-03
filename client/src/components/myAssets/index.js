@@ -54,7 +54,7 @@ const MyAssets = (props) => {
         ) : (
           <>
             {" "}
-            {notApprovedAssets.length !== 0 && assets.length !== 0 && (
+            {notApprovedAssets.length !== 0 && (
               <div className="container m-auto mt-5">
                 <Alert variant="success">
                   <Alert.Heading>שלום {user.firstname}</Alert.Heading>
@@ -70,46 +70,37 @@ const MyAssets = (props) => {
                 </Alert>
               </div>
             )}
-            {assets.length !== 0 ? (
-              assets.map((asset, i) => (
-                <Grow in={true} timeout={700} key={i}>
-                  <Grid item xs={11} lg={6} className={classes.root}>
-                    <AssetCard asset={asset} />
-                  </Grid>
-                </Grow>
-              ))
-            ) : (
-              <div className="container m-auto mt-5">
-                <Alert variant="success">
-                  <Alert.Heading>שלום {user.firstname}</Alert.Heading>
-                  <p>
-                    אין ברשותך נכסים שהועלו לאתר, באם העלת נכס והוא לא מופיע בדף
-                    זה, הנכס שלך נמצא בבדיקה של המערכת ותקבל עדכון לגביו במייל
-                    שבו רשמת את הנכס
-                  </p>
-                  {notApprovedAssets.length !== 0 && (
-                    <p>
-                      ברשותך
-                      {notApprovedAssets.length === 1
-                        ? " נכס אחד שממתין "
-                        : ` ${notApprovedAssets.length} נכסים שממתינים `}
-                      לאישור. כאשר הנכס יאושר תקבל על כך הודעה למייל שאיתו רשמת
-                      את הנכס לאתר.
-                    </p>
-                  )}
-                  <hr />
-                  <p className="mb-0">
-                    על מנת להעלות נכס חדש לאתר
-                    <span
-                      className="click_here"
-                      onClick={() => navigate("/upload")}
-                    >
-                      לחץ כאן
-                    </span>
-                  </p>
-                </Alert>
-              </div>
-            )}
+            {assets.length !== 0
+              ? assets.map((asset, i) => (
+                  <Grow in={true} timeout={700} key={i}>
+                    <Grid item xs={11} lg={6} className={classes.root}>
+                      <AssetCard asset={asset} />
+                    </Grid>
+                  </Grow>
+                ))
+              : notApprovedAssets.length === 0 && (
+                  <div className="container m-auto mt-5">
+                    <Alert variant="success">
+                      <Alert.Heading>שלום {user.firstname}</Alert.Heading>
+                      <p>
+                        אין ברשותך נכסים שהועלו לאתר, באם העלת נכס והוא לא מופיע
+                        בדף זה, הנכס שלך נמצא בבדיקה של המערכת ותקבל עדכון לגביו
+                        במייל שבו רשמת את הנכס
+                      </p>
+
+                      <hr />
+                      <p className="mb-0">
+                        על מנת להעלות נכס חדש לאתר
+                        <span
+                          className="click_here"
+                          onClick={() => navigate("/upload")}
+                        >
+                          לחץ כאן
+                        </span>
+                      </p>
+                    </Alert>
+                  </div>
+                )}
           </>
         )}
       </Grid>
