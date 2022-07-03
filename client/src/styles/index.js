@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export const updateAssetForm = makeStyles((theme) => ({
+export const updateAssetForm = (theme) => ({
   formGrid: {
     margin: "50px auto 10px ",
   },
@@ -60,7 +60,7 @@ export const updateAssetForm = makeStyles((theme) => ({
     flexDirection: "row",
     margin: "10px",
   },
-}));
+});
 
 export const singleAssetPageStyle = makeStyles(() => ({
   root: {

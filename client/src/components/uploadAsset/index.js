@@ -54,7 +54,9 @@ import moment from "moment";
 // Style
 import "./style.css";
 import { updateAssetForm } from "../../styles";
-const useStyles = updateAssetForm;
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => updateAssetForm(theme));
 
 const UploadAsset = (props) => {
   const [isUpdate, setIsUpdate] = useState(false);
